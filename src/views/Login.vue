@@ -1,9 +1,17 @@
 <template>
     <div class="login">
         <h1>Login</h1>
-        <input type="text" placeholder="Email"/>
+        <input 
+          type="text" 
+          placeholder="Email"
+          v-model="email"
+        />
         <br/>
-        <input type="password" placeholder="Password"/>
+        <input 
+          type="password" 
+          placeholder="Password"
+          v-model="password"
+        />
         <br/>
         <div class="btn-login">
             <button @click="login">Login</button>
@@ -18,14 +26,27 @@
 </template>
 
 <script>
+import  firebase from "firebase";
+
 export default {
     name: 'login',
     data(){
-        return {};
+        return {
+          email: '',
+          password: ''
+        };
     },
     methods: {
       login: function(){
-          this.$router.replace('/')
+        firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+          (user) => {
+              this.$router.replace('/')
+              alert(`Bem Vindo, ${this.email}`)
+          },
+          (err) => {
+            alert('Não foi possível realizar o login. ' + err.message)
+          }
+        ) 
       }
     }
 }
