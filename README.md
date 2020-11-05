@@ -6,7 +6,7 @@ Criando uma aplicação Vue.js com o sistema de autenticação Firebase
 
 Para rodar o projeto é necessário ter instalado a ferramenta Vue CLI no seu computador.
 
-Para isso abra o cmd na pasta raiz e execute o seguinte comando 
+Abra o cmd na pasta raiz e execute o seguinte comando 
 ```
 npm install -g @vue/cli
 ```
