@@ -2,7 +2,7 @@
 
 Criando uma aplicação Vue.js com o sistema de autenticação Firebase
 
-## Project setup
+## Configuração do Projeto
 
 Para rodar o projeto é necessário ter instalado a ferramenta Vue CLI no seu computador.
 
