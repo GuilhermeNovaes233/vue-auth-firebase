@@ -23,15 +23,7 @@ Crie um projeto no firebase e copie as informações geradas do SDK.
 Depois abra a pasta main.js e substitua o firebaseConfig pelo atual
 
 
-  var firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
-  };
+  var firebaseConfig = { "cole aqui" };
 
 
 
