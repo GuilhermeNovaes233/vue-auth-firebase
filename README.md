@@ -16,12 +16,12 @@ Agora dentro da pasta do projeto rode o seguinte comando para instalar os pacote
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar e hot-reloads
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar o projeto
 ```
 npm run build
 ```
