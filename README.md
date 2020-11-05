@@ -1,5 +1,8 @@
 # firebase-auth-vue
 
+Criando uma aplicação Vue.js com o sistema de autenticação Firebase
+
+
 ## Project setup
 ```
 npm install
