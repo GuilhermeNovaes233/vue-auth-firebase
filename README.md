@@ -2,7 +2,6 @@
 
 Criando uma aplicação Vue.js com o sistema de autenticação Firebase
 
-
 ## Project setup
 ```
 npm install
@@ -18,10 +17,30 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Adicionar o Firebase ao projeto
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Crie um projeto no firebase e copie as informações geradas do SDK. 
+Depois abra a pasta main.js e substitua o firebaseConfig pelo atual
+
+
+  var firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+
+
+
+
+
+
+
+
+
+
+
+
