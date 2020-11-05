@@ -11,7 +11,7 @@
         <p>
             Você não tem conta?
             <span>
-              <router-link to="/registrar">Crie uma conta</router-link>
+              <router-link to="/SignUp">Crie uma conta</router-link>
             </span>
         </p>
     </div>

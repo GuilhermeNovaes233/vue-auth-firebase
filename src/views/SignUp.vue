@@ -1,12 +1,20 @@
 <template>
     <div class="sign-up">
         <h1>Crie uma nova conta</h1>
-        <input type="text" placeholder="Email"/>
+        <input 
+          type="text" 
+          placeholder="Email"
+          v-model="email"
+        />
         <br/>
-        <input type="password" placeholder="Password"/>
+        <input
+          type="password" 
+          placeholder="Password"
+          v-model="password"
+        />
         <br/>
         <div>
-            <button>Registrar</button>
+            <button @click="signUp">Registrar</button>
         </div>
        <span>
            ou retorne ao 
@@ -16,12 +24,28 @@
 </template>
 
 <script>
+import  firebase from "firebase";
+
 export default {
     name: "signup",
     data(){
-        return {};
+        return {
+          email: '',
+          password: ''
+        };
     },
-    methods: {}
+    methods: {
+      signUp(){
+        firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
+          (user) => {
+            this.$router.replace('/');
+          },
+          (err) =>{
+            alert('Aconteceu algo inesperado.' + err.message);
+          }
+        )
+      }
+    }
 }
 </script>
 
