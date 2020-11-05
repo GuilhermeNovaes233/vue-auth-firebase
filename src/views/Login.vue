@@ -40,7 +40,7 @@ export default {
       login: function(){
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
           (user) => {
-              this.$router.replace('/')
+              this.$router.replace('/home')
               alert(`Bem Vindo, ${this.email}`)
           },
           (err) => {
