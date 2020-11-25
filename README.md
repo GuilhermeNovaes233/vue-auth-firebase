@@ -29,7 +29,7 @@ npm run build
 ### Adicionar o Firebase ao projeto
 
 Crie um projeto no firebase e copie as informações geradas do SDK. 
-Depois abra a pasta main.js e substitua o firebaseConfig pelo atual
+Depois abra o arquivo main.js e substitua o firebaseConfig pelo atual
 
 ```
    var firebaseConfig = {
